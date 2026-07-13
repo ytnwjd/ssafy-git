@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>I AM — 유수정</title>
+<link rel="stylesheet" as="style" crossorigin
+  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+<link rel="stylesheet" href="i-am.css" />
+</head>
+<body>
+
+  <!-- ===== SIDE NAV ===== -->
+  <nav class="side-nav" aria-label="섹션 이동">
+    <ul>
+      <li><a href="#cover" data-target="cover"><span class="side-nav-label">Cover</span></a></li>
+      <li><a href="#profile" data-target="profile"><span class="side-nav-label">Profile</span></a></li>
+      <li><a href="#reveal" data-target="reveal"><span class="side-nav-label">Plot Twist</span></a></li>
+      <li><a href="#about" data-target="about"><span class="side-nav-label">About</span></a></li>
+      <li><a href="#hero" data-target="hero"><span class="side-nav-label">Catchphrase</span></a></li>
+      <li><a href="#closing" data-target="closing"><span class="side-nav-label">Closing</span></a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== COVER ===== -->
+  <section class="cover" id="cover">
+    <div class="cover-bg-mark" aria-hidden="true">I AM</div>
+    <div class="wrap">
+      <p class="cover-badge eyebrow">SSAFY_16th Start Camp</p>
+      <h1 class="cover-title">안녕하세요,<br /><span>유수정</span>입니다.</h1>
+      <p class="cover-sub">저를 소개할게요.</p>
+      <div class="scroll-cue"><span class="dot"></span>Scroll</div>
+    </div>
+  </section>
+
+  <!-- ===== PROFILE ===== -->
+  <section class="profile" id="profile">
+
+    <div class="wrap">
+      <p class="hero-badge eyebrow">My Profile</p>
+    </div>
+    <div class="wrap profile-grid">
+      <div class="profile-photo-col">
+        <div class="profile-photo">
+          <img src="./public/ytnwjd.jpg" alt="유수정 프로필 사진" />
+        </div>
+        <p class="profile-name">유수정</p>
+      </div>
+
+      <div class="profile-info-col">
+        <div class="profile-box profile-box-accent">
+          <p class="profile-box-title">MBTI</p>
+          <p class="profile-box-value">ISF(T)J</p>
+        </div>
+
+        <div class="profile-box">
+          <p class="profile-box-title">Info</p>
+          <ul class="profile-list">
+            <li><span class="label">생년월일</span><span class="value">2003.12.08</span></li>  
+            <li><span class="label">본가</span><span class="value">충남 보령</span></li>
+            <li><span class="label">거주</span><span class="value">수원 → 대전 자취 중</span></li>
+            <li><span class="label">취미</span><span class="value">영화•뮤지컬 관람, 헬스</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap profile-more">
+      <p class="eyebrow">More About Me</p>
+      <div class="hobby-grid">
+        <div class="hobby-card">
+          <p class="hobby-icon">🎬</p>
+          <h3 class="hobby-title">영화 · 뮤지컬 관람</h3>
+          <ul class="poster-list">
+            <li>
+              <img src="./public/harry-potter.jpg" alt="영화 해리포터 포스터" />
+              <span>해리포터</span>
+            </li>
+            <li>
+              <img src="./public/memento.jpg" alt="영화 메멘토 포스터" />
+              <span>메멘토</span>
+            </li>
+            <li>
+              <img src="./public/frankenstein.jpg" alt="뮤지컬 프랑켄슈타인 포스터" />
+              <span>프랑켄슈타인</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hobby-card">
+          <p class="hobby-icon">💪</p>
+          <h3 class="hobby-title">헬스</h3>
+          <img class="hobby-photo" src="./public/gym.jpg" alt="헬스 사진" />
+          <p class="hobby-desc">일주일에 3회 이상 가려고 <strong>노력했어요</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVEAL CARDS ===== -->
+  <section id="reveal">
+    <div class="wrap">
+        <p class="eyebrow">Plot Twist</p>
+      <div class="reveal-on-scroll">
+        <h2 class="section-title">저는 !!</h2>
+      </div>
+     
+
+      <div class="reveal-header reveal-on-scroll">
+        <div class="progress">
+          <span id="progress-text">0 / 3 공개</span>
+          <span class="progress-dots" id="progress-dots">
+            <span data-idx="0"></span>
+            <span data-idx="1"></span>
+            <span data-idx="2"></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="card-grid reveal-on-scroll">
+
+        <div class="flip-card" tabindex="0" role="button" aria-pressed="false" data-idx="0"
+             aria-label="첫 번째 카드: 사실은 넘치는 열정. 눌러서 자세히 보기">
+          <div class="flip-card-inner">
+            <div class="card-face card-front">
+              <p class="headline">넘치는 열정</p>
+              <p class="hint">눌러서 자세히 보기</p>
+            </div>
+            <div class="card-face card-back">
+              <p class="truth-label">자세히</p>
+              <p>첫인상은 차분해보이고 조용해 보이지만, 열정이 있어요.<br />한번 꽂히면 끝까지 가는 편이에요.</p>
+              <div class="stamp" aria-hidden="true"><span>REVEALED<br />열정</span></div>
+              <div class="badge-done" aria-hidden="true">✓</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" tabindex="0" role="button" aria-pressed="false" data-idx="1"
+             aria-label="두 번째 카드: 사실은 의외의 승부욕. 눌러서 자세히 보기">
+          <div class="flip-card-inner">
+            <div class="card-face card-front">
+              <p class="headline">의외의 승부욕</p>
+              <p class="hint">눌러서 자세히 보기</p>
+            </div>
+            <div class="card-face card-back">
+              <p class="truth-label">자세히</p>
+              <p>의외로 승부욕이 넘쳐요.<br />다만, 타인과의 경쟁 보다는 나 자신과의 싸움을 좋아해요.</p>
+              <div class="stamp" aria-hidden="true"><span>REVEALED<br />승부욕</span></div>
+              <div class="badge-done" aria-hidden="true">✓</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" tabindex="0" role="button" aria-pressed="false" data-idx="2"
+             aria-label="세 번째 카드: 사실은 강한 회복탄력성. 눌러서 자세히 보기">
+          <div class="flip-card-inner">
+            <div class="card-face card-front">
+              <p class="headline">강한 회복탄력성</p>
+              <p class="hint">눌러서 자세히 보기</p>
+            </div>
+            <div class="card-face card-back">
+              <p class="truth-label">자세히</p>
+              <p>다르게 말하면 단순해요.<br />복잡하게 담아두지 않고, 금방 잊어버립니다.</p>
+              <div class="stamp" aria-hidden="true"><span>REVEALED<br />회복탄력성</span></div>
+              <div class="badge-done" aria-hidden="true">✓</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="wrap">
+      <p class="eyebrow">About Me</p>
+      <div class="reveal-on-scroll">
+        <h2 class="section-title">이런 사람이에요</h2>
+      </div>
+
+      <div class="about-grid reveal-on-scroll">
+        <div class="about-card">
+          <p class="about-icon">🎓</p>
+          <p class="about-card-title">전공 · 배경</p>
+          <div class="about-card-body">
+            <ul class="about-list">
+              <li><span class="label">전공</span><span class="value">소프트웨어학과</span></li>
+              <li><span class="label">졸업</span><span class="value">2026.08 예정</span></li>
+              <li><span class="label">경험</span><span class="value">학교·인턴십 프로젝트 다수 (개인 개발 위주)</span></li>
+              <li><span class="label">지원 동기</span><span class="value">팀 프로젝트 · PS 역량 강화</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <p class="about-icon">🎯</p>
+          <p class="about-card-title">학기 목표 · 각오</p>
+          <div class="about-card-body">
+            <ul class="about-list">
+              <li><span class="label">PS</span><span class="value">알고리즘 문제 꾸준히 풀기</span></li>
+              <li><span class="label">CS</span><span class="value">전공 지식 탄탄히 다지기</span></li>
+              <li><span class="label">개인 목표</span><span class="value">블로그 월 3회 이상 업로드</span></li>
+              <li><span class="label">각오</span><span class="value">작은 목표부터 하나씩 꾸준히 실천하기</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <p class="about-icon">🤝</p>
+          <p class="about-card-title">내가 잘할 수 있는 역할</p>
+          <div class="about-card-body">
+            <ul class="about-list">
+              <li><span class="label">일정 관리</span><span class="value">극J 성향으로 일정 · 진행 조율</span></li>
+              <li><span class="label">기술 스택</span><span class="value">백엔드(Java·Python), 프론트(React·Vue)</span></li>
+              <li><span class="label">적응력</span><span class="value">새로운 스택도 빠르게 캐치업</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="hero">
+    <div class="hero-bg-mark" aria-hidden="true">I AM</div>
+    <div class="wrap">
+      <p class="hero-badge eyebrow">Catchphrase</p>
+      <h1><span>함께하는 가치</span>를 믿고, <br> 꾸준함이 <span>신뢰를 만든다.</span></h1>
+    </div>
+  </header>
+
+  <!-- ===== CLOSING ===== -->
+  <section class="closing" id="closing">
+    <div class="wrap reveal-on-scroll">
+      <p class="eyebrow" style="justify-content:center;">Conclusion</p>
+      <p class="note">한 학기 동안 SSAFY 5반에서 잘 지내봐요, 잘 부탁드려요!</p>
+      <div class="cta-row">
+        <button class="btn btn-primary" id="hello-btn">반가워요 👋</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>I AM — MADE WITH VANILLA HTML · CSS · JS</footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="i-am.js"></script>
+
+</body>
+</html>
